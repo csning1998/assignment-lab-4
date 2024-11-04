@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    GitHub Deployment Use -->
+<!--    <link rel="stylesheet" href="./src/asserts/style.css">-->
+<!--    <link rel="stylesheet" href="./src/asserts/GoogleMaterial.css">-->
+        <link rel="stylesheet" href="../src/asserts/style.css">
+        <link rel="stylesheet" href="../src/asserts/GoogleMaterial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Personal Resume</title>
+</head>
+<body>
+<main class="container">
+    <div id="resume">
+        <div class="header-content">
+            <!--    GitHub Deployment Use -->
+            <!--    <img src="./src/asserts/profilePicture.jpg" alt="Profile Picture" class="profile-picture">-->
+            <img src="../src/asserts/profilePicture.jpg" alt="Profile Picture" class="profile-picture">
+            <h1 id="name"></h1>
+            <h3 id="title"></h3>
+        </div>
+        <div class="d-flex">
+            <div class="left-column">
+                <div class="card">
+                    <section>
+                        <h3><i class="fas fa-info-circle"></i> About Me</h3>
+                        <p id="about"></p>
+                    </section>
+                </div>
+
+                <div class="card">
+                    <section>
+                        <h3><i class="fas fa-phone"></i> Contact</h3>
+                        <ul id="contact-list"></ul>
+                    </section>
+                </div>
+
+                <div class="card">
+                    <section>
+                        <h3><i class="fas fa-tools"></i> Skills</h3>
+                        <ul id="skills-list"></ul>
+                    </section>
+                </div>
+
+                <div class="card">
+                    <section>
+                        <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                        <ul id="certifications-list"></ul>
+                    </section>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="card">
+                    <section>
+                        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                        <div id="experience-list"></div>
+                    </section>
+                </div>
+
+                <div class="card">
+                    <section>
+                        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <div id="education-list"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.4990578560348!2d121.4301048092969!3d25.034138013214616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7e8507ba8dd%3A0xdf4b8bcb6330096f!2sCollege%20of%20Science%20%26%20Engineering!5e0!3m2!1sen!2stw!4v1728747622231!5m2!1sen!2stw"
+                height="450" width="100%"
+                style="filter: invert(90%); max-width: 100%;"
+                allowfullscreen="allowfullscreen"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</main>
+<script src="../dist/src/scripts/index.js"></script>
+<!--    GitHub Deployment Use -->
+<!--<script src="./src/scripts/index.js"></script>-->
+</body>
+</html>

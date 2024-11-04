@@ -1,0 +1,149 @@
+.profile-picture {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 29.7cm;
+    padding: 1cm;
+    margin: 1cm auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: var(--color-bg-light);
+}
+
+.left-column,
+.right-column {
+    padding: .5rem;
+    text-align: left;
+}
+
+.left-column h3,
+.right-column h2,
+.right-column h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.left-column {
+    flex: 1 1 30%;
+    max-width: 320px;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 2 1 70%;
+}
+
+
+.left-column p,
+.right-column p {
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.9;
+}
+
+.left-column ul,
+.right-column ul {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.left-column li,
+.right-column li {
+    position: relative;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+    padding-left: 20px;
+}
+
+.left-column ul li::before,
+.right-column ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: .8rem;
+    transform: translateY(-50%);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-border);
+}
+
+.card {
+    background-color: var(--color-bg-light);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.d-flex {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.left-column, .right-column {
+    padding: 1rem;
+}
+
+.left-column {
+    width: 30%;
+    max-width: 320px;
+    margin-right: 20px;
+}
+
+.right-column {
+    width: 70%;
+    flex: 1;
+}
+
+#resume {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto 1.5rem;
+    }
+}

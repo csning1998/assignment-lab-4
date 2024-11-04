@@ -1,0 +1,22 @@
+{
+  "name": "lab-assingment-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp src/index.html dist/ && cp -r src/asserts dist/src",
+    "lint": "eslint --ext .js,.ts,.tsx --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.6.3"
+  },
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8"
+  }
+}
